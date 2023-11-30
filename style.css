@@ -4,13 +4,12 @@ body {
   font-family: "Hedvig Letters Sans", sans-serif;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .container {
   width: 50%;
-  background-color: #F2F0F4;
   overflow: hidden;
+  background: #F2F0F4;
 }
 .container img {
   width: 100%;
@@ -18,11 +17,14 @@ body {
   transition: transform 0.5s;
 }
 .container .text {
-  height: 50%;
   text-align: center;
   background: #F2F0F4;
-  padding: 10px;
   transition: transform 0.5s;
+  padding: 10px;
+}
+.container .text h1 {
+  text-transform: uppercase;
+  font-size: 50px;
 }
 .container .text h2 {
   color: #7c7096;
@@ -34,6 +36,7 @@ body {
 }
 .container:hover .text {
   transform: translateY(-65%);
+  padding-top: 10px;
 }
 .container:hover .text p {
   visibility: visible;
@@ -42,5 +45,5 @@ body {
 }
 .container:hover img {
   transform: scale(1.2);
-  width: 100%;
+  filter: blur(5px);
 }/*# sourceMappingURL=style.css.map */

@@ -10,25 +10,26 @@ body {
 
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .container {
     width: 50%;
-    background-color: $container-color;
     overflow: hidden;
+    background: $container-color;
     img {
         width: 100%;
         overflow: hidden;
         transition: transform 0.5s ;
     }
-
     .text {
-        height: 50%;
         text-align: center;
         background: $container-color;
-        padding: 10px;
         transition: transform 0.5s;
+        padding: 10px;
+        h1 {
+            text-transform: uppercase;
+            font-size: 50px;
+        }
         h2 {
             color: $background-color;
         }
@@ -41,6 +42,7 @@ body {
     &:hover {
         .text { 
             transform: translateY(-65%);
+            padding-top: 10px;
             p {
                 visibility: visible;
                 opacity: 1;
@@ -49,7 +51,7 @@ body {
         }
         img {
             transform: scale(1.2);
-            width: 100%;
+            filter: blur(5px);
         }
     }
 }

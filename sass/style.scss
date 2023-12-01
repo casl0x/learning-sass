@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap');
+
+$background-color :	#7c7096;
+$container-color: #F2F0F4;
+$font : 'Hedvig Letters Sans', sans-serif;
+
+body {
+    background-color: $background-color;
+    font-family: $font;
+
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 50%;
+    overflow: hidden;
+    background: $container-color;
+    img {
+        width: 100%;
+        overflow: hidden;
+        transition: transform 1s ;
+    }
+    .text {
+        text-align: center;
+        background: $container-color;
+        transition: transform 1s;
+        padding: 10px;
+        h1 {
+            text-transform: uppercase;
+            font-size: 50px;
+        }
+        h2 {
+            color: $background-color;
+        }
+        p {
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 1s opacity 1.5s;
+        }
+    }
+    &:hover {
+        .text { 
+            transform: translateY(-65%);
+            padding-top: 10px;
+            p {
+                visibility: visible;
+                opacity: 1;
+                font-size: 20px;
+            }
+        }
+        img {
+            transform: scale(1.2);
+            filter: blur(5px);
+        }
+    }
+}

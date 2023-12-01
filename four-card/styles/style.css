@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  background: hsl(0, 0%, 90%);
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+body p {
+  color: hsl(229, 6%, 66%);
+}
+body .head {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+}
+body .head h2 {
+  font-weight: 200;
+}
+body .cards {
+  margin: 5vh 10vw;
+  display: flex;
+  flex-flow: column nowrap;
+}
+body .cards .solo_card {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 7%;
+  margin: 3%;
+  box-shadow: 2px 3px 3px 3px hsl(229, 6%, 66%);
+  background: white;
+  border-radius: 5px;
+}
+body .cards .solo_card img {
+  width: 50px;
+}
+body .cards .text_card {
+  margin: 0;
+}
+body .cards .builder {
+  border-top: solid 5px hsl(0, 78%, 62%);
+}
+body .cards .supervisor {
+  border-top: solid 5px hsl(180, 62%, 55%);
+}
+body .cards .karma {
+  border-top: solid 5px hsl(34, 97%, 64%);
+}
+body .cards .calculator {
+  border-top: solid 5px hsl(212, 86%, 64%);
+}
+
+@media screen and (min-width: 375px) {
+  body .head {
+    width: 40%;
+  }
+  body .cards {
+    margin: 5vh 10vw;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(5, auto);
+    gap: 10px;
+  }
+  body .cards .solo_card {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 5%;
+    margin: 3%;
+    box-shadow: 2px 3px 3px 3px hsl(229, 6%, 66%);
+    background: white;
+    border-radius: 5px;
+  }
+  body .cards .builder {
+    border-top: solid 5px hsl(0, 78%, 62%);
+    grid-column: 2;
+    grid-row: 1/3;
+  }
+  body .cards .supervisor {
+    border-top: solid 5px hsl(180, 62%, 55%);
+    grid-column: 1;
+    grid-row: 2/4;
+  }
+  body .cards .karma {
+    border-top: solid 5px hsl(34, 97%, 64%);
+    grid-column: 2;
+    grid-row: 3/5;
+  }
+  body .cards .calculator {
+    border-top: solid 5px hsl(212, 86%, 64%);
+    grid-column: 3;
+    grid-row: 2/4;
+  }
+}/*# sourceMappingURL=style.css.map */

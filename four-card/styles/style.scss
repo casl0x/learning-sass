@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+$primary-red:hsl(0, 78%, 62%);
+$primary-cyan:hsl(180, 62%, 55%);
+$primary-orange:hsl(34, 97%, 64%);
+$primary-blue:hsl(212, 86%, 64%);
+$neutral-dblue: hsl(234, 12%, 34%);
+$neutral-gblue: hsl(229, 6%, 66%);
+$neutral-lgray: hsl(0, 0%, 90%);
+
+body {
+    background: $neutral-lgray;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    p {
+        color: $neutral-gblue;
+    }
+    .head {
+        text-align: center;
+        justify-content: center;
+        width: 80%;
+        h2 {
+            font-weight: 200;
+        }
+    }
+    .cards {
+        margin: 5vh 10vw;
+        display: flex;
+        flex-flow: column nowrap;
+        .solo_card {
+            display: flex;
+            flex-flow: column nowrap;
+            padding: 7%;
+            margin: 3%;
+            box-shadow: 2px 3px 3px 3px $neutral-gblue;
+            background: white;
+            border-radius: 5px;
+            img {
+                width: 50px;
+            }
+        }
+        .text_card {
+            margin: 0 ;
+        }
+        .builder {
+            border-top: solid 5px $primary-red;
+        }
+        .supervisor {
+            border-top: solid 5px $primary-cyan;
+        }
+        .karma {
+            border-top: solid 5px $primary-orange;
+
+        }
+        .calculator {
+            border-top: solid 5px $primary-blue;
+        }
+    }
+}
+
+@media screen and (min-width: 375px) {
+    body {
+        .head {
+            width: 40%;
+        }
+        .cards {
+            margin: 5vh 10vw;
+            display: grid;
+            grid-template-columns: repeat(3, 33%);
+            grid-template-rows: repeat(5, auto);
+            gap: 10px;
+            .solo_card {
+                display: flex;
+                flex-flow: column nowrap;
+                padding: 5%;
+                margin: 3%;
+                box-shadow: 2px 3px 3px 3px $neutral-gblue;
+                background: white;
+                border-radius: 5px;
+            }
+            .builder {
+                border-top: solid 5px $primary-red;
+                grid-column: 2 ;
+                grid-row: 1 / 3 ;
+            }
+            .supervisor {
+                border-top: solid 5px $primary-cyan;
+                grid-column: 1;
+                grid-row: 2 / 4;
+            }
+            .karma {
+                border-top: solid 5px $primary-orange;
+                grid-column: 2;
+                grid-row: 3 / 5;
+            }
+            .calculator {
+                border-top: solid 5px $primary-blue;
+                grid-column: 3;
+                grid-row: 2 / 4;
+            }
+        }
+    
+    }
+    
+}

@@ -11,14 +11,14 @@ body .product {
   border-radius: 15px;
   overflow: hidden;
   display: flex;
-  flex-flow: column nowrap;
-}
-body .product img {
-  -o-object-fit: fill;
-     object-fit: fill;
+  flex-flow: column;
 }
 body .product .img_deck {
   display: none;
+}
+body .product .img_mob {
+  display: block;
+  width: 100vw;
 }
 body .product .perfume {
   margin: 20px;
@@ -65,7 +65,14 @@ body .product .buy_btn:hover {
 }
 
 @media screen and (min-width: 375px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   body .product {
+    height: 450px;
+    width: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,15 +81,9 @@ body .product .buy_btn:hover {
   body .product .img_mob {
     display: none;
   }
-  body .product .img_mob img {
-    width: 50%;
-    height: 100%;
-  }
   body .product .img_deck {
     display: block;
-  }
-  body .product .perfume {
-    display: flex;
-    flex-flow: column;
+    width: 25vw;
+    height: 70vh;
   }
 }/*# sourceMappingURL=style.css.map */

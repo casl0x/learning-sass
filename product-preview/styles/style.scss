@@ -20,12 +20,13 @@ body {
         overflow: hidden;
 
         display: flex;
-        flex-flow: column nowrap;
-        img {
-            object-fit: fill;
-        }
+        flex-flow: column;
         .img_deck {
             display: none;
+        }
+        .img_mob{
+            display: block;
+            width: 100vw;
         }
         .perfume{
             margin: 20px;
@@ -76,24 +77,23 @@ body {
 
 @media screen and (min-width: 375px ) {
     body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         .product {
+            height: 450px;
+            width: 600px;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-flow: row;
             .img_mob {
                 display: none;
-                img {
-                    width: 50%;
-                    height: 100%;
-                }
             }
             .img_deck {
                 display: block;
-            }
-            .perfume {
-                display: flex;
-                flex-flow: column;
+                width: 25vw;
+                height: 70vh;
             }
         }
     }

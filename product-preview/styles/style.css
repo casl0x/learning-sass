@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&display=swap");
+body {
+  background: hsl(30, 38%, 92%);
+}
+body font {
+  size: 14px;
+}
+body .product {
+  background: hsl(0, 0%, 100%);
+  margin: 5%;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+}
+body .product img {
+  max-height: auto;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+body .product .perfume {
+  margin: 20px;
+}
+body .product .perfume h2 {
+  font-family: "Fraunces", serif;
+}
+body .product .perfume p {
+  font-family: "Montserrat", sans-serif;
+}
+body .product .perfume .prix {
+  display: flex;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&display=swap');
+
+$primary-dcyan: hsl(158, 36%, 37%);
+$primary-cream: hsl(30, 38%, 92%);
+$neutral-vdblue: hsl(212, 21%, 14%);
+$neutral-dgblue: hsl(228, 12%, 48%);
+$neutral-white: hsl(0, 0%, 100%);
+$font-frau: 'Fraunces', serif;
+$font-mont: 'Montserrat', sans-serif;
+
+body {
+    background: $primary-cream;
+    font {
+        size: 14px;
+    }
+    .product {
+        background: $neutral-white;
+        margin: 5%;
+        overflow: hidden;
+
+        display: flex;
+        flex-flow: column nowrap;
+        img {
+            max-height: auto;
+            object-fit: fill;
+        }
+        .perfume{
+            margin: 20px;
+            h2 {
+                font-family: $font-frau;
+            }
+            p {
+                font-family: $font-mont;
+            }
+            .prix {
+                display: flex;
+            }
+        }
+    }
+}

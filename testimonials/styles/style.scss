@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+
+$font-bar: 'Barlow Semi Condensed', sans-serif;
+$primary-mviolet: hsl(263, 55%, 52%);
+$primary-vdgblue: hsl(217, 19%, 35%);
+$primary-vdbblue: hsl(219, 29%, 14%);
+$primary-white: hsl(0, 0%, 100%);
+$neutral-lgray: hsl(0, 0%, 81%);
+$neutral-lgblue: hsl(210, 46%, 95%);
+
+body {
+    font-family: $font-bar;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    .dan {
+        background-color: $primary-mviolet;
+    }
+    .jon {
+        background-color: $primary-vdbblue;
+    }
+}
